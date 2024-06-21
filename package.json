@@ -1,0 +1,57 @@
+{
+  "name": "remix2",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "start": "remix-serve ./build/index.js",
+    "generate:migration": "drizzle-kit generate:sqlite",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^2.2.10",
+    "@remix-run/css-bundle": "^2.8.0",
+    "@remix-run/node": "^2.8.0",
+    "@remix-run/react": "^2.8.0",
+    "@remix-run/serve": "^2.8.0",
+    "better-sqlite3": "^9.4.3",
+    "clsx": "^2.1.0",
+    "convict": "^6.2.4",
+    "cron": "^3.1.6",
+    "drizzle-orm": "^0.29.4",
+    "execa": "^8.0.1",
+    "framer-motion": "^11.0.8",
+    "iconoir-react": "^7.5.0",
+    "isbot": "^4.1.0",
+    "next-themes": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.0",
+    "remix-flat-routes": "^0.6.4"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.8.0",
+    "@types/better-sqlite3": "^7.6.9",
+    "@types/convict": "^6.1.6",
+    "@types/nconf": "^0.10.6",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "drizzle-kit": "^0.20.14",
+    "eslint": "^8.38.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
