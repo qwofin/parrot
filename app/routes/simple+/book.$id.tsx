@@ -38,7 +38,7 @@ export default function Page() {
   }
 
   function renderGenres(item: typeof data.book) {
-    if (!item?.genres) return null;
+    if (!item?.genres?.length) return null;
     return (
       <>
         {item.genres
