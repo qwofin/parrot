@@ -26,7 +26,7 @@ export function PageNavbar() {
       <NavbarBrand >
         <Link className="font-bold text-inherit" href="/">Parrot</Link>
       </NavbarBrand>
-        <SearchInput />
+        <SearchInput action="/books" />
         <ThemeSwitcher />
       </NavbarContent>
       <NavbarContent className="hidden sm:flex" justify="center">
