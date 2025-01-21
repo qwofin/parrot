@@ -145,7 +145,7 @@ export class Syncer {
 
           const existingFiles = await db.query.fileSchema.findMany({
             where: and(
-              eq(fileSchema.readarrBookId, book.id),
+              eq(fileSchema.bookId, bookId),
               eq(fileSchema.sourceReadarrId, readarr.id!)
             ),
           });
